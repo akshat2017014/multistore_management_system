@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.store_deleteproductController">
+  <content>
+    <AnchorPane prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d8d9da" height="448.0" layoutX="10.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" width="660.0" />
+            <Label layoutX="32.0" layoutY="23.0" text="delete product">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ListView fx:id="listproduct" layoutX="32.0" layoutY="308.0" prefHeight="161.0" prefWidth="239.0" />
+            <Label layoutX="112.0" layoutY="81.0" text="categories" />
+            <Button layoutX="43.0" layoutY="58.0" mnemonicParsing="false" onAction="#browse" text="Browse" />
+            <Button layoutX="436.0" layoutY="428.0" mnemonicParsing="false" onAction="#delete" text="delete product" />
+            <TextField fx:id="f1" layoutX="470.0" layoutY="209.0" />
+            <Label layoutX="359.0" layoutY="213.0" text="enter category" />
+            <Button layoutX="436.0" layoutY="250.0" mnemonicParsing="false" onAction="#updateroot" prefHeight="25.0" prefWidth="100.0" text="next  category" />
+            <Button layoutX="566.0" layoutY="473.0" mnemonicParsing="false" onAction="#back" text="back" />
+            <ListView fx:id="listcat" layoutX="32.0" layoutY="111.0" prefHeight="161.0" prefWidth="239.0" />
+            <Label layoutX="125.0" layoutY="287.0" prefHeight="17.0" prefWidth="58.0" text="products" />
+            <Label layoutX="384.0" layoutY="380.0" text="Enter Product" />
+            <TextField fx:id="f3" layoutX="479.0" layoutY="376.0" />
+            <TextField fx:id="f2" layoutX="470.0" layoutY="45.0" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
